@@ -167,9 +167,6 @@ ADDON_STATUS ADDON_SetSetting(const char *settingName,
 	return ADDON_STATUS_OK;
 }
 
-void ADDON_Stop() {
-}
-
 void ADDON_FreeSettings() {
 }
 
