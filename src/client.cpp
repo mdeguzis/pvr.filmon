@@ -195,7 +195,7 @@ void OnPowerSavingActivated() {
 void OnPowerSavingDeactivated() {
 }
 
-PVR_ERROR GetAddonCapabilities(PVR_ADDON_CAPABILITIES* pCapabilities) {
+void GetCapabilities(PVR_ADDON_CAPABILITIES* pCapabilities) {
 	pCapabilities->bSupportsTV = true;
 	pCapabilities->bSupportsEPG = true;
 	pCapabilities->bSupportsRecordings = true;
@@ -210,8 +210,6 @@ PVR_ERROR GetAddonCapabilities(PVR_ADDON_CAPABILITIES* pCapabilities) {
 	pCapabilities->bSupportsRecordingEdl = false;
 
 	XBMC->Log(LOG_DEBUG, "%s - got PVR Filmon capabilities", __FUNCTION__);
-
-	return PVR_ERROR_NO_ERROR;
 }
 
 const char *GetBackendName(void) {
